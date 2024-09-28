@@ -1,313 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My Portfolio</title>
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="mediaqueries.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X_UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-<nav id="desktop-nav">
-    <div class="logo">Ladan Saeidi</div>
-    <div>
-    <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    </div>
-</nav>
-<nav id="hamburger-nav">
-    <div class="logo">Ladan Saeidi</div>
-    <div class="hamburger-menu">
-    <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-    </div>
-    </div>
-</nav>
-<section id="profile">
-    <div class="section__pic-container">
-    <img src="./assets/Ladan.jpg" alt="Ladan Saeidi profile picture" />
-    </div>
-    <div class="section__text">
-    <p class="section__text__p1">Hello, I'm</p>
-    <h1 class="title">Ladan Saeidi</h1>
-    <p class="section__text__p2">Data Analyst</p>
-    <div class="btn-container">
-        <button
-        class="btn btn-color-2"
-        onclick="window.open('./assets/LadanSaeidi-CV.pdf')"
-        >
-        Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-        Contact Info
-        </button>
-    </div>
-    <div id="socials-container">
-        <img
-        src="./assets/linkedin.png"
-        alt="My LinkedIn profile"
-        class="icon"
-        onclick="location.href='https://www.linkedin.com/in/ladan-saeidi/'"
-        />
-        <img
-        src="./assets/github.png"
-        alt="My Github profile"
-        class="icon"
-        onclick="location.href='https://github.com/ladan888'"
-        />
-    </div>
-    </div>
-</section>
-<section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-    <div class="section__pic-container">
-        <img
-            src="./assets/Ladan.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-    </div>
-    <div class="about-details-container">
-        <div class="about-containers">
-        <div class="details-container">
-            <img
-            src="./assets/experience.png"
-            alt="Experience icon"
-            class="icon"
-            />
-            <h3>Experience</h3>
-            <p>5+ years <br />Data Analyst</p>
+    <nav id="desktop-nav">
+        <div class="logo">Ladan Saeidi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li> 
+                <li><a href="#projects">Projects</a> </li> 
+                <li><a href="#contact">Contact</a> </li> 
+            </ul>
         </div>
-        <div class="details-container">
-            <img
-            src="./assets/education.png"
-            alt="Education icon"
-            class="icon"
-            />
-            <h3>Education</h3>
-            <h4>B.Sc. Bachelors Degree</h4>
-            <p>Computer Engineering - Software</p>
-            <h4>M.Sc. Masters Degree</h4>
-            <p>Data Science</p>
-        </div>
-        </div>
-        <div class="text-container">
-        <p>
-            Highly analytical and detail-oriented Data Analyst with a master’s degree 
-            in Data Science and over 5 years of experience in data manipulation, 
-            analysis, visualisation, predictive modeling, and data extraction. 
-            Adept at managing complex information, analysing data quality, 
-            and generating reports to support service development. Proficient in 
-            Python, SQL, Power BI, Excel, Snowflake, Databricks, and Data Quality 
-            Metrics. Strong communication and interpersonal skills, fostering 
-            collaboration with diverse stakeholders. Committed to maintaining 
-            high standards of accuracy, confidentiality, and data integrity. 
-            Passionate about data-driven decision-making and skilled at conveying 
-            insights to both senior leaders and non-technical stakeholders.
-        </p>
-        </div>
-    </div>
-    </div>
-    <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#experience'"
-    />
-</section>
-<section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-    <div class="about-containers">
-        <div class="details-container">
-        <h2 class="experience-sub-title">Data Analyst</h2>
-        <div class="article-container">
-            <article>
-            <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-            />
-            <div>
-                <h3>Python</h3>
-                <p>Experienced</p>
-            </div>
-            </article>
-            <article>
-            <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-            />
-            <div>
-                <h3>Power BI</h3>
-                <p>Experienced</p>
-            </div>
-            </article>
-            <article>
-            <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-            />
-            <div>
-                <h3>DAX</h3>
-                <p>Experienced</p>
-            </div>
-            </article>
-            <article>
-            <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-            />
-            <div>
-                <h3>SQL</h3>
-                <p>Experienced</p>
-            </div>
-            </article>
-            <article>
-            <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-            />
-            <div>
-                <h3>Excel</h3>
-                <p>Experienced</p>
-            </div>
-            </article>
-           
-        </div>
-        </div>
-        
-    </div>
-    </div>
-    <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#projects'"
-    />
-</section>
-<section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-    <div class="about-containers">
-        <div class="details-container color-container">
-        <div class="article-container">
-            <img
-            src="./assets/project-1.png"
-            alt="Project 1"
-            class="project-img"
-            />
-        </div>
-        <h2 class="experience-sub-title project-title">Project One</h2>
-        <div class="btn-container">
-            <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/ladan888/MedMNIST'"
-            >
-            Github
-            </button>
-        </div>
-        </div>
-        <div class="details-container color-container">
-        <div class="article-container">
-            <img
-            src="./assets/project-2.png"
-            alt="Project 2"
-            class="project-img"
-            />
-        </div>
-        <h2 class="experience-sub-title project-title">Project Two</h2>
-        <div class="btn-container">
-            <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/ladan888/chatbox'"
-            >
-            Github
-            </button>
-        </div>
-        </div>
-        <div class="details-container color-container">
-        <div class="article-container">
-            <img
-            src="./assets/project-3.png"
-            alt="Project 3"
-            class="project-img"
-            />
-        </div>
-        <h2 class="experience-sub-title project-title">Project Three</h2>
-        <div class="btn-container">
-            <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/ladan888/Machine-Learning-with-Deep-Neural-Networks'"
-            >
-            Github
-            </button>
-        </div>
-        </div>
-    </div>
-    </div>
-    <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#contact'"
-    />
-</section>
-<section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-    <div class="contact-info-container">
-        <img
-        src="./assets/email.png"
-        alt="Email icon"
-        class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:examplemail@gmail.com">saeidi66@gmail.com</a></p>
-    </div>
-    <div class="contact-info-container">
-        <img
-        src="./assets/linkedin.png"
-        alt="LinkedIn icon"
-        class="icon contact-icon"
-        />
-        <p><a href="https://www.linkedin.com/in/ladan-saeidi/">LinkedIn</a></p>
-    </div>
-    </div>
-</section>
-<footer>
-    <nav>
-    <div class="nav-links-container">
-        <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
     </nav>
-</footer>
-<script src="script.js"></script>
+    <nav id="hamburger-nav">
+        <div class="logo">Ladan Saeidi</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/Ladan.jpg" alt="Ladan Saeidi profile picture"/>
+        </div>
+        <div class="section_text">
+         <p class="section_text_p1">Hello, I'm</p>
+         <h1 class="title"> Ladan Saeidi</h1>
+         <p class="section_text_p2">Data Analyst</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/LadanSaeidi-CV.pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick=location.href='./#contact'>
+                Contact Info
+            </button>
+         </div>
+         <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My Linkedin Profile"
+            class="icon" onclick="location.href='https://www.linkedin.com/in/ladan-saeidi/'"/>
+            <img src="./assets/github.png" alt="My GitHub Profile"
+            class="icon" onclick="location.href='https://github.com/ladan888'"/>
+         </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1></br>
+        <div class="section-container">
+            <div class="section_pic-container2">
+                <img src="./assets/Ladan1.jpg" alt="Profile picture" 
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <h4>B.Sc. Bachelors Degree</h4>
+                        <p>Computer Engineering - Software</p>
+                        <h4>M.Sc. Masters Degree</h4>
+                        <p>Computer Engineering - Software</p>
+                        <p>Data Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Highly analytical Data Analyst with a master’s in Data Science and 5+ years of experience in data analysis, visualization, and predictive modeling. Skilled in Python, SQL, Power BI, Excel, and Snowflake. Strong communicator with expertise in data quality and report generation, ensuring accuracy, confidentiality, and integrity. Passionate about data-driven decision-making and collaborating with stakeholders.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="experience"></br></br></br></br>
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+            <h2 class="experience-sub-title">Data Analyst</h2>
+            <div class="article-container">
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Power BI</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>DAX</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>SQL</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Excel</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>Snowflake</h3>
+                        <p>Experienced</p>
+                    </div>
+                    </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Excel</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>Databricks</h3>
+                        <p>Experienced</p>
+                    </div>
+                    </article>    
+            </div>
+            </div>
+            
+        </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        />
+    </section>
+
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Biomedical Image Processing</h2></br>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ladan888/MedMNIST'"
+                >
+                Github
+                </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Streamlit App Chatbox</h2></br>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ladan888/chatbox'"
+                >
+                Github
+                </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Medical Image Analysis and Classification</h2>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ladan888/Machine-Learning-with-Deep-Neural-Networks'"
+                >
+                Github
+                </button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+    </section>
+      <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p>
+                    <a href="mailto:saeidi66@gmail.com">
+                        saeidi66@gmail.com
+                </a>
+            </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon"
+                class="icon contact-icon"
+                />
+                <p>
+                    <a href="https://www.linkedin.com/in/ladan-saeidi/">
+                        LinkedIn
+                </a>
+            </p>
+            </div>
+        </div>
+
+      </section>
+      <footer>
+        <nav>
+            <div class="nav-links-container">
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li> 
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li> 
+                        <li><a href="#contact">Contact</a></li> 
+                    </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ladan Saeidi. All rights reserved</p>
+      </footer>
+    <script src="script.js"></script>
 </body>
 </html>
